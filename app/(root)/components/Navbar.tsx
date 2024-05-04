@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div
-      className="w-screen
+      className="
         shadow-xl 
         flex
         items-center 
