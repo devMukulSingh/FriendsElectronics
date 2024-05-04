@@ -80,6 +80,14 @@ const Footer = () => {
             ) )
           }
         </ul>
+
+          <h1 className="text-semibold text-lg">
+              Timings
+          </h1>
+          <h1>
+            Monday-Sunday 9:00 AM to 8 PM
+          </h1>
+
       </div>
     </div>
   );

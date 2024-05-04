@@ -6,7 +6,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <div className="bg-slate-100">
       <Navbar />
-        <div className="mt-[5rem]">{children}</div>
+        <div className="mt-[5rem] min-h-screen">{children}</div>
       <Footer />
     </div>
   );
