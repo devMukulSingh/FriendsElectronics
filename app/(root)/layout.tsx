@@ -1,14 +1,13 @@
-import Navbar from "./components/Navbar";
+import Footer from "@/components/commons/Footer";
+import Navbar from "@/components/commons/Navbar";
+import { ReactNode } from "react";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] min-h-screen">
+    <div className="bg-slate-100">
       <Navbar />
-      {children}
+        <div className="mt-[5rem]">{children}</div>
+      <Footer />
     </div>
   );
 }

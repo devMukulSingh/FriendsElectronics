@@ -30,8 +30,8 @@ const ProductPage = () => {
     },
   ];
   return (
-    <div className="flex p-5 flex-col items-center gap-5 ">
-      <h1 className="font-semibold text-xl sm:text-2xl text-neutral-700 ">
+    <div className="flex py-10 flex-col items-center gap-5 ">
+      <h1 className="text-2xl sm:text-3xl text-neutral-700 ">
         Explore our Products
       </h1>
       <div
