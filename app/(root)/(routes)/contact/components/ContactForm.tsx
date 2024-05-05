@@ -56,11 +56,13 @@ const ContactForm = () => {
   }
 
   return (
-    <motion.div 
-      transition={{duration:0.5}}
-      initial={{ opacity:0, y:100}}
-      animate={{ opacity:1, y:0}}
-      className="flex flex-col gap-5 items-center justify-center">
+    <motion.div
+      viewport={{ margin: "-200px" }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      className="flex flex-col gap-5 items-center justify-center"
+    >
       <Form {...form}>
         <form
           className="flex 

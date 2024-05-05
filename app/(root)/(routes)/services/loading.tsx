@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import { ThreeCircles } from "react-loader-spinner";
 const Loading = () => {
   return (
-    <div className='flex justify-center mt-32 w-full h-screen'>
+    <div className="flex justify-center mt-32 w-full h-screen">
       <ThreeCircles
         visible={true}
         height="50"
@@ -14,6 +14,6 @@ const Loading = () => {
       />
     </div>
   );
-}
+};
 
-export default Loading
+export default Loading;

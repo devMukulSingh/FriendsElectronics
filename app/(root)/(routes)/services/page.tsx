@@ -29,7 +29,9 @@ const ServicesPage = () => {
   ];
   return (
     <div className="flex justify-center items-center flex-col gap-10 py-10 w-full px-10 ">
-      <h1 className="drop-shadow-md text-3xl text-neutral-800">Explore our Services</h1>
+      <h1 className="drop-shadow-md text-3xl text-neutral-800">
+        Explore our Services
+      </h1>
       {/* <div className="
         grid
         sm:grid-cols-2

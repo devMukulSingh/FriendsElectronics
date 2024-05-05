@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { ThreeCircles } from "react-loader-spinner";
 const Loading = () => {
   return (
@@ -14,6 +14,6 @@ const Loading = () => {
       />
     </div>
   );
-}
+};
 
-export default Loading
+export default Loading;

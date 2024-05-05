@@ -14,7 +14,6 @@ interface ProductCardProps {
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
   return (
     <motion.div
-      
       transition={{ duration: 0.5 }}
       initial={{ y: 80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
