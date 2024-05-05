@@ -6,6 +6,9 @@ const Navbar = () => {
   return (
     <div
       className="
+      shadow-text-neutral-900
+        bg-slate-900
+        text-white
         fixed
         top-0 
         overflow-hidden
@@ -14,7 +17,6 @@ const Navbar = () => {
         shadow-xl 
         flex
         items-center 
-        bg-white 
         p-5 
         h-[5rem]
         "

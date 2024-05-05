@@ -5,11 +5,11 @@ import Timings from "./Timings";
 import { Copyright } from "lucide-react";
 
 const Footer = () => {
-
   return (
     <div
       className="
-      bg-white 
+      bg-black
+      text-white
       shadow-inner
       shadow-neutral-300
       items-center
@@ -25,19 +25,20 @@ const Footer = () => {
         gap-20
         "
       >
-        <QuickLinks/>
-        <ContactLinks/>
-        <Timings/>
+        <QuickLinks />
+        <ContactLinks />
+        <Timings />
       </div>
-      <div 
+      <div
         className="
         flex
         gap-1
         text-sm
         text-neutral-500
         items-center
-        ">
-        <Copyright size={15}/> Friends Electronics @2024
+        "
+      >
+        <Copyright size={15} /> Friends Electronics @2024
       </div>
     </div>
   );

@@ -1,8 +1,4 @@
-import {
-  CalendarDays,
-  Clock9,
-
-} from "lucide-react";
+import { CalendarDays, Clock9 } from "lucide-react";
 const Timings = () => {
   return (
     <>
@@ -38,6 +34,6 @@ const Timings = () => {
       </ul>
     </>
   );
-}
+};
 
-export default Timings
+export default Timings;

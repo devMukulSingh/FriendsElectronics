@@ -1,7 +1,6 @@
 import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 const ContactLinks = () => {
-
   return (
     <>
       <ul
@@ -23,7 +22,8 @@ const ContactLinks = () => {
         </li>
         <li className="flex gap-2 items-center">
           <MapPin size={20} />
-          Lamachaur, Fatehpur road,<br />
+          Lamachaur, Fatehpur road,
+          <br />
           Haldwani (Uttarakhand)
         </li>
       </ul>

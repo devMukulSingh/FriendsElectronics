@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Map = () => {
   return (
@@ -13,6 +13,6 @@ const Map = () => {
       ></iframe>
     </>
   );
-}
+};
 
-export default Map
+export default Map;

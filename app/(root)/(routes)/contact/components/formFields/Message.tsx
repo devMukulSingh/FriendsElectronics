@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
-import { Iform } from '../ContactForm'
+import React, { FC } from "react";
+import { Iform } from "../ContactForm";
 import {
   FormControl,
   FormField,
@@ -7,11 +7,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Textarea } from '@/components/ui/textarea';
+import { Textarea } from "@/components/ui/textarea";
 
-const Message:FC<Iform> = ({
-    form
-}) => {
+const Message: FC<Iform> = ({ form }) => {
   return (
     <>
       <FormField
@@ -29,6 +27,6 @@ const Message:FC<Iform> = ({
       />
     </>
   );
-}
+};
 
 export default Message;

@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
-import { Iform } from '../ContactForm'
+import React, { FC } from "react";
+import { Iform } from "../ContactForm";
 import {
   Form,
   FormControl,
@@ -8,12 +8,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from '@/components/ui/input';
+import { Input } from "@/components/ui/input";
 
-
-const Name:FC<Iform> = ({
-    form
-}) => {
+const Name: FC<Iform> = ({ form }) => {
   return (
     <>
       <FormField
@@ -31,6 +28,6 @@ const Name:FC<Iform> = ({
       />
     </>
   );
-}
+};
 
-export default Name
+export default Name;

@@ -30,17 +30,17 @@ const ProductPage = () => {
     },
   ];
   return (
-    <div className="flex py-10 flex-col items-center gap-5 ">
-      <h1 className="text-2xl sm:text-3xl text-neutral-700 ">
+    <div className="flex py-10 flex-col items-center gap-10 ">
+      <h1 className="drop-shadow-md text-2xl sm:text-3xl text-neutral-700 ">
         Explore our Products
       </h1>
       <div
         className="
-          w-2/3
+          w-3/4
           grid
           gap-10
-          lg:grid-cols-3
-          md:grid-cols-2
+          lg:grid-cols-4
+          md:grid-cols-3
           grid-cols-1
         "
       >
@@ -49,7 +49,7 @@ const ProductPage = () => {
         ))}
       </div>
     </div>
-  ); 
+  );
 };
 
 export default ProductPage;

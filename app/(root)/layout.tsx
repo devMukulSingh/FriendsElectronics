@@ -4,9 +4,9 @@ import { ReactNode } from "react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="bg-slate-100">
+    <div className="bg-white">
       <Navbar />
-        <div className="mt-[5rem] min-h-screen">{children}</div>
+      <div className="mt-[5rem] min-h-screen">{children}</div>
       <Footer />
     </div>
   );

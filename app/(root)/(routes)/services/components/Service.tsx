@@ -1,72 +1,76 @@
-'use client'
-import Image from 'next/image';
-import React, { FC } from 'react'
-import { motion } from "framer-motion"
+"use client";
+import Image from "next/image";
+import React, { FC } from "react";
+import { motion ,useScroll} from "framer-motion";
 
 interface ServiceProps {
   service: {
     image: string;
     name: string;
     description: string;
-    price?:number
+    price?: number;
   };
 }
 
-const Service:FC<ServiceProps> = ({
-    service
-}) => {
+const Service: FC<ServiceProps> = ({ service }) => {
   return (
-
-
     <motion.div
-      whileHover={{ scale:0.95}}
-      initial={{ opacity:0, x:-100 }}
-      animate={{ opacity:1, x:0 }}
-      transition={{ duration:0.3}}
+      viewport={{ once: true }}
+      // whileHover={{ scale: 0.95 }}
+      initial={{ opacity: 0 , x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      // animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease:'easeInOut'}}
       className="
-        w-2/3
+        p-5
+        border-2
+        hover:shadow-md     
+        w-full
         flex 
         gap-5 
-        p-5 
-        border 
-        justify-start 
+        justify-center 
         bg-white
-        shadow-lg
-        rounded-md
+        rounded-xl
         hover:opacity-70
         "
     >
-      <figure className="relative w-[35rem] h-[13rem] ">
+      <figure
+        className="relative 
+        w-[50rem] 
+        h-[20rem] 
+        "
+      >
         <Image
           className="object-contain object-left"
           fill
           src={service.image}
           alt="serviceimg"
-          />
+        />
       </figure>
       <div className="flex flex-col gap-5 items-center justify-center">
         <h1
           className="
           text-center 
-          text-2xl 
+          sm:text-3xl
+          text-2xl
           font-semibold 
           text-neutral-800
           "
-          >
+        >
           {service.name}
         </h1>
         <h1 className="text-lg text-neutral-500 text-center">
           {service.description}
         </h1>
-        {
-            service.price && 
-            <h1 className="font-semibold">
-          Starting from <span className='font-semibold text-lg'>₹{service.price}</span>
-        </h1>
-        }
+        {service.price && (
+          <h1 className="font-semibold">
+            Starting from{" "}
+            <span className="font-semibold text-lg">₹{service.price}</span>
+          </h1>
+        )}
       </div>
-          </motion.div>
+    </motion.div>
   );
-}
+};
 
-export default Service
+export default Service;
