@@ -23,7 +23,7 @@ const ServicesPage = () => {
     },
     {
       name: "Printout and PhotoCopy",
-      image: "",
+      image: "/service4.jpg",
       description: "",
     },
   ];

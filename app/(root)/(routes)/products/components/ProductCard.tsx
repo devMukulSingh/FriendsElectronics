@@ -1,5 +1,7 @@
+"use client"
 import Image from 'next/image';
 import React, { FC } from 'react'
+import { motion } from "framer-motion";
 
 interface ProductCardProps{
     product:{
@@ -11,6 +13,11 @@ interface ProductCardProps{
 
 const ProductCard:FC<ProductCardProps> = ({ product }) => {
   return (
+    <motion.div
+      transition={{ duration:0.5}}
+      initial={{ y:80,opacity:0 }}
+      animate={{ y:0,opacity:1, } }>
+
     <div
       className="h-[18rem]
     cursor-pointer
@@ -43,7 +50,8 @@ const ProductCard:FC<ProductCardProps> = ({ product }) => {
       <h1>
         Starting from <span className='text-lg font-semibold'>₹{product.price}</span>
       </h1>
-    </div>
+      </div>
+    </motion.div>
   );
 };
 
